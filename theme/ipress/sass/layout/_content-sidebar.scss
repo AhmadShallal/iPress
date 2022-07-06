@@ -1,0 +1,301 @@
+.content-area {
+    float: left;
+    margin: 0 (-$size__site-sidebar) 0 0;
+    width: $size__site-main;
+}
+
+.site-main {
+    margin: 0 $size__site-sidebar 0 0;
+}
+
+.site-content .widget-area {
+    float: right;
+    overflow: hidden;
+    width: $size__site-sidebar;
+}
+
+.site-footer {
+    clear: both;
+    width: $size__site-main;
+}
+
+// Sidebar Styling
+.side {
+    .side-section {
+        display: block;
+        margin: auto;
+    }
+    .social-media {
+        .subscribe-section {
+            perspective: 300px;
+            div:first-of-type {
+                position: relative;
+                transform-style: preserve-3d;
+                transition: 0.5s ease;
+                cursor: pointer;
+                background-color: #315b93;
+                width: 50px;
+                height: 50px;
+                &:hover {
+                    transform: rotateY(180deg);
+                }
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                .front {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    backface-visibility: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .back {
+                    transform: rotateY(180deg);
+                    font-size: 11px;
+                    color: #fff;
+                    font-weight: bold;
+                    backface-visibility: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        .subscribe-section.twitter {
+            div:first-of-type {
+                background-color: #00abdb;
+            }
+        }
+        .subscribe-section.dribbble {
+            div:first-of-type {
+                background-color: #f93f85;
+            }
+        }
+        .subscribe-section.feed {
+            div:first-of-type {
+                background-color: #fd9f13;
+            }
+        }
+    }
+    .side-section {
+        .side-title {
+            background-color: #1d1d1f;
+            h5 {
+                color: #fff;
+                font-size: 1rem;
+            }
+            &::after {
+                content: '';
+                margin-left: 10px;
+                position: absolute;
+                margin-top: 2px;
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 7.5px 0 7.5px;
+                border-color: #1d1d1f transparent transparent transparent;
+            }
+        }
+    }
+    .whats-hot {
+        .side-title {
+            ul {
+                display: inline;
+                li.active {
+                    background-color: #bbb;
+                    display: inline-block;
+                    border-radius: 5px;
+                    padding: 3px;
+                    margin: auto 1px;
+                }
+                li {
+                    background-color: #1d1d1f;
+                    display: inline-block;
+                    border: 1px solid #bcb;
+                    border-radius: 5px;
+                    padding: 3px;
+                    margin: auto 1px;
+                }
+            }
+        }
+        .side-content .wh-item {
+            .whats-hot-img {
+                img {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: rgb(0, 0, 0);
+                    }
+                }
+                span {
+                    position: absolute;
+                    color: #fff;
+                    background-color: #e74949;
+                    height: 20px;
+                    width: 20px;
+                    //padding: 2px;
+                    font-size: 14px;
+                    text-align: center;
+                    left: 15px;
+                    margin-top: 45px;
+                }
+            }
+            .whats-hot-post {
+                .time {
+                    font-size: 14px;
+                    color: #ccc;
+                }
+                .rating {
+                    font-size: 14px;
+                    color: #fff;
+                    background-color: #f1b51f;
+                    padding: 2px;
+                }
+            }
+            &:hover {
+                .whats-hot-img {
+                    img {
+                        &::before {
+                            display: block;
+                        }
+                    }
+                }
+                .whats-hot-post {
+                    .title {
+                        color: #e74949;
+                    }
+                    .rating {
+                        background-color: #111;
+                    }
+                }
+            }
+        }
+    }
+    .football-results {
+        .side-content {
+            .date {
+                font-size: 11px;
+                color: #ccc;
+                padding: 10px 0;
+            }
+            .football-result {
+                .separator {
+                    position: relative;
+                }
+                .winner,
+                .loser {
+                    position: absolute;
+                }
+                .float-left {
+                    right: 60%;
+                }
+                .float-right {
+                    left: 53%;
+                }
+                .winner {
+                    .team {
+                        color: #e74949;
+                    }
+                }
+            }
+        }
+    }
+    .ipress-tweets {
+        .tweets {
+            background-color: #35a6d6;
+            //height: 250px;
+            color: #fff;
+            .top {
+                border-bottom: 1px solid #ccc;
+                 :first-child {
+                    font-weight: bold;
+                    letter-spacing: 0.5px;
+                }
+                .true {
+                    font-size: 25px;
+                    position: relative;
+                    bottom: 10px;
+                    left: 10px;
+                }
+            }
+            .tweet,
+            .date {
+                text-align: start;
+            }
+            ul {
+                padding-left: 0;
+                padding-top: 10px;
+                li.active {
+                    background-color: #fff;
+                    display: inline-block;
+                    border-radius: 5px;
+                    padding: 5px;
+                    margin: auto 1px;
+                }
+                li {
+                    background-color: #35a6d6;
+                    display: inline-block;
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    padding: 5px;
+                    margin: auto 1px;
+                }
+            }
+        }
+    }
+    .poll {
+        h6 {
+            font-weight: 400;
+        }
+        input[type="radio"]+label {
+            display: inline-block;
+            margin: 10px 0;
+        }
+        input[type="radio"]:checked+label {
+            color: #e74949;
+        }
+        input[type="radio"]:checked {
+            color: #e74949;
+        }
+        button {
+            border: none;
+            padding: 6px 15px;
+            background-color: #e74949;
+            margin: 10px 5px;
+            color: #fff;
+        }
+        button:first-of-type {
+            margin-left: 0;
+        }
+    }
+    .recent-comments {
+        .side-content {
+            .recent-post {
+                .commenter {
+                    font-weight: 600;
+                }
+                .title {
+                    font-weight: 300;
+                    font-size: 15px;
+                }
+                .time {
+                    font-size: 14px;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.ipress-tweets .tweets {
+  position: relative;
+  background-color: #35a6d6;
+  min-height: 250px;
+  color: #fff; }
+  .ipress-tweets .tweets .top {
+    border-bottom: 1px solid #ccc; }
+    .ipress-tweets .tweets .top :first-child {
+      font-weight: bold;
+      letter-spacing: 0.5px; }
+    .ipress-tweets .tweets .top .true {
+      font-size: 25px;
+      position: relative;
+      bottom: 10px;
+      left: 10px; }
+  .ipress-tweets .tweets .tweet,
+  .ipress-tweets .tweets .date {
+    display: none;
+    text-align: justify; }
+  .ipress-tweets .tweets .tweet .active,
+  .ipress-tweets .tweets .date .active {
+    display: block; }
+  .ipress-tweets .tweets ul {
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    padding-left: 0;
+    padding-top: 10px; }
+    .ipress-tweets .tweets ul li.active {
+      background-color: #fff;
+      display: inline-block;
+      border-radius: 5px;
+      padding: 5px;
+      margin: auto 1px; }
+    .ipress-tweets .tweets ul li {
+      background-color: #35a6d6;
+      display: inline-block;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      padding: 5px;
+      margin: auto 1px; }
+
+/*# sourceMappingURL=style.css.map */

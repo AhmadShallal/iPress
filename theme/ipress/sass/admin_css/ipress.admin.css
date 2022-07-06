@@ -1,0 +1,16 @@
+.ipress-info-preview {
+    display: inline-block;
+    max-width: 40%;
+    margin: 15px 5px;
+}
+
+.ipress-info-preview img {
+    max-width: 90%;
+    padding: 5px;
+}
+
+.admin-form {
+    display: block;
+    /*float: left; */
+    max-width: 55%;
+}

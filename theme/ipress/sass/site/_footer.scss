@@ -1,0 +1,242 @@
+.footer-container {
+    .info-section,
+    .recent-posts,
+    .best-revs,
+    .footer-contact {
+        width: 25%;
+    }
+    background-color: #1d1e20;
+    .footer-info {
+        color: #ddd;
+        .email {
+            color: #fff;
+            span {
+                color: #ddd;
+            }
+        }
+    }
+    .recent-posts,
+    .best-revs {
+        .main-title {
+            background-color: #252629;
+            h5 {
+                color: #ddd;
+                font-size: 1.1rem;
+                line-height: 0.7;
+                letter-spacing: 1px;
+            }
+            &::after {
+                content: '';
+                margin-left: 10px;
+                position: absolute;
+                margin-top: 2px;
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 7.5px 0 7.5px;
+                border-color: #252629 transparent transparent transparent;
+            }
+        }
+        .category-item {
+            display: block;
+            min-height: 60px;
+            margin-top: 1.5rem;
+            .list-img {
+                img {
+                    max-width: 60px;
+                }
+            }
+            .list-post {
+                a {
+                    color: #ddd;
+                    text-decoration: none;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                .time-link {
+                    font-size: 0.8rem;
+                    color: #959292;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .best-revs {
+        .whats-hot-post {
+            .title {
+                a {
+                    color: #ddd;
+                    text-decoration: none;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            .rating {
+                font-size: 14px;
+                color: #fff;
+                background-color: #e74949;
+                padding: 2px;
+                ul {
+                    list-style: none;
+                    display: inline;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        display: inline;
+                        span.post-meta-key {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .cat {
+                font-size: 14px;
+                color: #fff;
+                padding: 2px;
+                ul {
+                    list-style: none;
+                    display: inline;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        display: inline;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+            .cat-1 {
+                background-color: #45d3cd;
+            }
+            .cat-2 {
+                background-color: #4688d3;
+            }
+            .cat-3 {
+                background-color: #46d367;
+            }
+        }
+    }
+    .footer-contact {
+        .main-title {
+            background-color: #252629;
+            h5 {
+                color: #ddd;
+                font-size: 1.1rem;
+                line-height: 0.7;
+                letter-spacing: 1px;
+            }
+            &::after {
+                content: '';
+                margin-left: 10px;
+                position: absolute;
+                margin-top: 2px;
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 7.5px 0 7.5px;
+                border-color: #252629 transparent transparent transparent;
+            }
+        }
+        p {
+            color: #bbb;
+            font-size: 0.9rem;
+            line-height: 2;
+        }
+        input[type="Email"] {
+            min-width: 75%;
+            padding: 5px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            border: none;
+            &::-webkit-input-placeholder {
+                font-size: 0.8rem;
+            }
+            &::-moz-placeholder {
+                font-size: 0.8rem;
+            }
+            &:-ms-input-placeholder {
+                font-size: 0.8rem;
+            }
+            &:hover,
+            &:active {
+                &::-webkit-input-placeholder {
+                    opacity: 0;
+                }
+                &::-moz-placeholder {
+                    opacity: 0;
+                }
+                &:-ms-input-placeholder {
+                    opacity: 0;
+                }
+            }
+        }
+        button {
+            max-width: 15%;
+            margin-left: 5px;
+            border-radius: 5px;
+            border: none;
+            padding: 5px 15px;
+            background-color: #e74949;
+            color: #eee;
+            i::before {
+                font-weight: lighter;
+            }
+        }
+        .footer-social {
+            a {
+                color: #bbb;
+                &:active,
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            i:hover,
+            i:active {
+                &.fa-dribbble::before {
+                    color: #ea4c89;
+                }
+                &.fa-google-plus-square::before {
+                    color: #dd4b39;
+                }
+                &.fa-twitter::before {
+                    color: #00aced;
+                }
+                &.fa-facebook-official::before {
+                    color: #3b5998;
+                }
+                &.fa-rss::before {
+                    color: #f60
+                }
+                &.fa-linkedin-square::before {
+                    color: #007bb6;
+                }
+                &.fa-github::before {
+                    color: #394047;
+                }
+                &.fa-pinterest::before {
+                    color: #cb2027;
+                }
+            }
+            i:before {
+                font-size: 1.15rem;
+            }
+        }
+    }
+}
+
+.copy-footer {
+    background-color: #1d1e20;
+    color: #555;
+    font-size: 0.8rem;
+    .border {
+        border-top: 1px solid #222;
+    }
+}

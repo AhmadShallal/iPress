@@ -1,0 +1,323 @@
+@media (min-width:760px) and (max-width:860px) {
+    .ad,
+    .top-section {
+        display: none !important;
+    }
+    .menu-section {
+        border-bottom: none !important;
+        .navbar {
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 100% !important;
+            .navbar-collapse {
+                text-align: center !important;
+            }
+            .menu-2 {
+                display: none !important;
+            }
+        }
+        .navbar-toggler {
+            top: -70px;
+        }
+    }
+    .daily-post {
+        display: inline-block;
+        .post-title {
+            background-color: #f55a5a;
+            h5 {
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+        .post-text {
+            max-width: 36%;
+            .post-preview {
+                //position: absolute;
+                width: 150px !important;
+                max-height: 100px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                //overflow: hidden;
+            }
+        }
+    }
+    main {
+        display: flex;
+        .side {
+            width: 100%;
+            order: 2;
+            margin-top: 20px;
+            .side-section {
+                display: block;
+                max-width: 70%;
+            }
+            .side-ads {
+                display: none;
+            }
+            table {
+                width: 100%;
+                display: none;
+            }
+            .social-media {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-around;
+                //flex-wrap: wrap;
+                max-width: 99%;
+            }
+            .whats-hot {
+                .whats-hot-img {
+                    span {
+                        display: none;
+                    }
+                }
+            }
+            /* .whats-hot,
+            .football-results {
+                display: inline-flex;
+                flex-flow: row;
+                flex-wrap: wrap;
+                max-width: 48%;
+            } */
+        }
+        .content {
+            width: 100%;
+            order: 1;
+            .show-news {
+                .widgets-area {
+                    //display: none;
+                    width: 40%;
+                    order: 1;
+                }
+                .posts-area {
+                    width: 60%;
+                    order: 2;
+                    .daily-post {}
+                    .category-post {
+                        .category-featured {
+                            max-width: 95%;
+                            text-align: center;
+                            img {
+                                //max-width: 150px;
+                            }
+                            .post-text {
+                                margin: 10px auto;
+                            }
+                        }
+                        .category-list {
+                            max-width: 99%;
+                            margin-top: 3rem;
+                            margin-bottom: 1rem;
+                            img {
+                                width: 100px;
+                            }
+                            .list-post {
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+                    .carousel-post {
+                        .post-images {
+                            justify-content: space-around;
+                            .p-img {
+                                text-align: center;
+                                img {
+                                    max-width: 80%;
+                                }
+                                &::after {
+                                    top: 0;
+                                    left: 0;
+                                    width: 80%;
+                                    margin: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-container {
+        .recent-posts,
+        .best-revs {
+            display: none;
+        }
+        .info-section,
+        .footer-contact {
+            width: 49% !important;
+        }
+    }
+}
+
+@media (max-width:759px) {
+    .ad,
+    .top-section {
+        display: none !important;
+    }
+    .menu-section {
+        border-bottom: none !important;
+        .navbar {
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 100% !important;
+            .navbar-collapse {
+                text-align: center !important;
+            }
+            .menu-2 {
+                display: none !important;
+            }
+        }
+        .navbar-toggler {
+            top: -70px;
+            right: 55px;
+        }
+    }
+    /////////////////////////////////////////////
+    main {
+        display: flex;
+        .side {
+            width: 100%;
+            order: 2;
+            margin-top: 20px;
+            .side-section {
+                display: block;
+                max-width: 89%;
+            }
+            .side-ads {
+                display: none;
+            }
+            table {
+                width: 100%;
+                display: none;
+            }
+            .social-media {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-around;
+                //flex-wrap: wrap;
+                max-width: 99%;
+            }
+            .whats-hot {
+                .whats-hot-img {
+                    span {
+                        display: none;
+                    }
+                }
+            }
+            /* .whats-hot,
+            .football-results {
+                display: inline-flex;
+                flex-flow: row;
+                flex-wrap: wrap;
+                max-width: 48%;
+            } */
+        }
+        .content {
+            width: 100%;
+            order: 1;
+            .show-news {
+                .widgets-area {
+                    //display: none;
+                    order: 2;
+                }
+                .posts-area {
+                    width: 99%;
+                    order: 1;
+                    .daily-post {
+                        display: inline-block;
+                        .post-title {
+                            background-color: #f55a5a;
+                            h5 {
+                                color: #fff;
+                                font-size: 1rem;
+                            }
+                        }
+                        .post-text {
+                            max-width: 36%;
+                            .post-preview {
+                                //position: absolute;
+                                width: 150px !important;
+                                max-height: 100px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                word-wrap: break-word;
+                                //overflow: hidden;
+                            }
+                        }
+                    }
+                    .category-post {
+                        .post-content {
+                            justify-content: unset;
+                            flex-wrap: wrap;
+                        }
+                        .category-featured {
+                            min-width: 95%;
+                            text-align: center;
+                            img {
+                                //max-width: 150px;
+                            }
+                            .post-text {
+                                margin: 10px auto;
+                            }
+                        }
+                        .category-list {
+                            max-width: 99%;
+                            margin-top: 3rem;
+                            margin-bottom: 1rem;
+                            img {
+                                width: 100px;
+                            }
+                            .list-post {
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+                    .carousel-post {
+                        .post-images {
+                            justify-content: space-around;
+                            .p-img {
+                                text-align: center;
+                                img {
+                                    max-width: 80%;
+                                }
+                                &::after {
+                                    top: 0;
+                                    left: 0;
+                                    width: 80%;
+                                    margin: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-container {
+        .recent-posts,
+        .best-revs {
+            display: none;
+        }
+        .info-section,
+        .footer-contact {
+            width: 49% !important;
+        }
+        .footer-contact {
+            .form-inline {
+                input {
+                    margin-right: 5px!important;
+                    padding-right: 0px!important;
+                    padding-left: 10px!important;
+                }
+                button {
+                    max-width: none;
+                }
+            }
+            .footer-social {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+// styling for pages
+.category-travel {
+    .archive-title {
+        color: #fd9f13;
+    }
+}
+
+.category-lifestyle {
+    .archive-title {
+        color: #00b3ff;
+    }
+}
+
+.category-music {
+    .archive-title {
+        color: #51ab0a;
+    }
+}
+
+.category-technology {
+    .archive-title {
+        color: #33456b;
+    }
+}
+
+.category-business {
+    .archive-title {
+        color: #e74949;
+    }
+}
+
+.archive-header {
+    .archive-title {
+        //border-bottom: 2px solid #555;
+        margin-bottom: 10px;
+    }
+    hr {
+        color: #555;
+        max-width: 140px;
+        height: 2px;
+        margin-top: 7px;
+    }
+}
+
+.simple-posts {
+    h4 {
+        a {
+            color: #222;
+            text-decoration: none;
+            &:hover,
+            &:visited,
+            &:active {
+                text-decoration: none;
+                color: #222;
+            }
+        }
+    }
+    .cat-post {
+        max-height: 300px;
+        .post-img img {
+            min-height: 260px;
+            max-height: 275px;
+            width: 98%;
+        }
+        .post-time {
+            color: #ccc;
+            font-size: 0.75rem;
+            a {
+                text-decoration: none;
+                color: #ccc;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+ .post-like {
+     margin-top: 1em;
+     text-align: right;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     text-decoration: none;
+ }
+ 
+ .like {
+     /* background: url(images/icons.png) no-repeat; */
+     background-color: rgb(199, 31, 31);
+     color: #111;
+     display: inline-block;
+     /*float: left;*/
+     margin-right: 4px;
+     -moz-transition: all 0.2s ease-out 0.1s;
+     -webkit-transition: all 0.2s ease-out 0.1s;
+     -o-transition: all 0.2s ease-out 0.1s;
+     transition: all 0.2s ease-out 0.1s;
+ }
+ 
+ .count {
+     display: inline;
+ }
+ 
+ .post-like a:hover .like {
+     background-color: #eee;
+     text-decoration: none;
+ }
+ 
+ .voted .like,
+ .post-like.alreadyvoted {
+     background-color: #999;
+     color: #444;
+ }
